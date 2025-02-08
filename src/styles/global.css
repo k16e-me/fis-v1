@@ -2,9 +2,18 @@
 @plugin '@tailwindcss/typography';
 @plugin '@tailwindcss/forms';
 
+@font-face {
+  font-family: 'Berlin';
+  src: url('/fonts/display-extra.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
 @theme {
     /* Fonts */
-    --font-sans: 'Bricolage Grotesque Variable', 'sans-serif';
+    --font-display: 'Berlin', 'sans-serif';
+    --font-sans: 'Plus Jakarta Sans Variable', 'sans-serif';
 
     /* Font sizes x line-heights */
 
