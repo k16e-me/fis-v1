@@ -34,13 +34,13 @@ const { text, class: classes, ...props } = Astro.props
 
 	<!-- Icon & Link -->
 	<div
-		class='p-(--gap-7) tablet:p-(--gap-8) laptop:p-(--gap-9) [grid-area:6/1/7/2] flex justify-center items-center tablet:justify-end tablet:items-end'>
+		class='p-(--gap-7) tablet:p-(--gap-8) laptop:p-(--gap-9) [grid-area:6/1/7/2] laptop:[grid-area:6/2/7/3] flex tablet:items-end'>
 		<Icon name='symbol' class='h-11 tablet:h-12 shrink-0' />
 	</div>
 
 	<!-- Link -->
 	<div
-		class='p-(--gap-7) tablet:p-(--gap-8) [grid-area:6/2/7/5] flex items-center laptop:items-end'>
+		class='p-(--gap-7) tablet:p-(--gap-8) [grid-area:6/2/7/4] laptop:[grid-area:6/3/7/5] flex items-center laptop:items-end'>
 		<div class='laptop:pb-(--gap-6)'>
 			<a
 				href='https://linkedin.com/farmtechng'
@@ -49,7 +49,7 @@ const { text, class: classes, ...props } = Astro.props
 					content={`Linkedin.com/farmtechNG`}
 					size='base-to-small'
 					weight='medium'
-					class='text-inherit'
+					class='text-inherit break-words hyphens-auto'
 				/>
 			</a>
 		</div>
