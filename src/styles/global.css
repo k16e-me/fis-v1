@@ -11,13 +11,30 @@
 }
 
 @theme {
+    /*  Typescaling (Perfect Fourth */
+    --type-scale: 1.4;
+    --scale-6: 6.225rem;
+    --scale-5: 5.225rem;
+    --scale-4: 4.225rem;
+    --scale-3: 3.225rem;
+    --scale-2: 2.225rem;
+
+    /* Breakpoints */
+    --breakpoint-*: initial;
+    --breakpoint-tablet: 40rem;
+    --breakpoint-laptop: 64rem;
+    --breakpoint-desktop: 80rem;
+
     /* Fonts */
     --font-display: 'Berlin', 'sans-serif';
     --font-sans: 'Plus Jakarta Sans Variable', 'sans-serif';
 
     /* Font sizes x line-heights */
-    
-    --text-8xl: 6.65rem;
+
+    --text-6xl: var(--scale-6);
+    --text-5xl: var(--scale-5);
+    --text-4xl: var(--scale-4);
+    --text-3xl: var(--scale-3);
 }
 
 button { text-align: inherit; }
