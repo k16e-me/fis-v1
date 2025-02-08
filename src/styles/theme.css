@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+@layer base {
+    :root {
+        /* Base */
+
+        /* Variable Colors */
+
+        @media (prefers-color-scheme: dark) {
+
+        }
+    }
+}

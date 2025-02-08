@@ -1,0 +1,18 @@
+---
+import Error from '@layouts/Error.astro'
+import Title from '@composites/Title.astro'
+import Richtext from '@composites/Richtext.astro'
+---
+
+<Error>
+	<Title
+		title='not found!'
+		subtitle='Oops...'
+		flipped={false}
+		swapped={true}
+		invisible={false}
+	/>
+	<Richtext textAlign='center' invisible={false}>
+		<p>Let’s take you <a href='/'>back home.</a></p>
+	</Richtext>
+</Error>

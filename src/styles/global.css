@@ -1,0 +1,14 @@
+@import 'tailwindcss';
+@plugin '@tailwindcss/typography';
+@plugin '@tailwindcss/forms';
+
+@theme {
+    /* Fonts */
+    --font-sans: 'Bricolage Grotesque Variable', 'sans-serif';
+
+    /* Font sizes x line-heights */
+
+}
+
+button { text-align: inherit; }
+svg { @apply pointer-events-none flex-shrink-0 fill-current; }

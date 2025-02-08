@@ -1,0 +1,38 @@
+---
+import { getCollection, render } from 'astro:content'
+import Base from '@layouts/Base.astro'
+import { components } from '@scripts/components/components'
+import { getCollection } from 'astro:content'
+
+export async function getStaticPaths() {
+	const collections = ['pages']
+	const allCollections = await Promise.all(
+		collections.map((collection) => getCollection(collection)),
+	)
+
+	return allCollections
+		.flatMap((entries, index) =>
+			entries.map((entry) => ({
+				params: { slug: slug(entry, collections[index]) },
+				props: { entry },
+			})),
+		)
+		.filter((route) => route.params.slug !== undefined)
+
+	function slug(entry, collection) {
+		if (collection === 'pages') {
+			if (entry.id === 'pages/home') return '/'
+			return entry.id.replace(/^pages\//, '')
+		} else if (collection === 'work') return entry.data.id ? `work/${entry.data.id}` : undefined
+		else return entry.id
+	}
+}
+
+const { entry } = Astro.props
+const { Content } = await render(entry)
+const { pathname } = Astro.url
+---
+
+<Base data={entry.data}>
+	<Content components={components} />
+</Base>

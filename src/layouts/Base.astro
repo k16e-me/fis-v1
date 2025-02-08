@@ -1,0 +1,23 @@
+---
+import Head from '@layouts/Head.astro'
+
+const { data } = Astro.props
+const { pathname } = Astro.url
+---
+
+<!doctype html>
+<html lang='en'>
+	<Head
+		title={data.title}
+		description={data.description}
+		image={import.meta.env.SITE + data.cover.src.src}
+		alt={data.cover.alt ? data.cover.alt : ''}
+	/>
+	<body
+		class=''>
+		<main>
+			<slot />
+		</main>
+		<script src='@scripts/global.js'></script>
+	</body>
+</html>

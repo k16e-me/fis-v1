@@ -1,0 +1,53 @@
+---
+import '@fontsource-variable/bricolage-grotesque'
+import { SEO } from 'astro-seo'
+import { _slugify } from '@scripts/utils/slugify'
+import '@styles/theme.css'
+import '@styles/global.css'
+import { getEntry } from 'astro:content'
+
+const {
+	title,
+	image = '/thumbnail.png',
+	description = '',
+	alt = 'K16E website thumbnail',
+} = Astro.props
+const {
+	data: { site },
+} = await getEntry('meta', 'meta')
+const canonicalURL = new URL(Astro.url.pathname, Astro.site)
+const theme = site.theme
+---
+
+<head>
+	<meta charset='UTF-8' />
+	<meta name='viewport' content='width=device-width' />
+	<link rel='icon' type='image/svg+xml' href='/favicon.svg' />
+	<meta name='view-transition' content='same-origin' />
+	<link rel='sitemap' href='/sitemap-index.xml' />
+	<link type='text/plain' rel='author' href='/humans.txt' />
+	<link rel='icon' type='image/svg+xml' href='/favicon.svg' />
+	<link rel='icon' type='image/x-icon' href='/favicon.ico' />
+	<SEO
+		title={title}
+		titleTemplate={`%s / ${site.title}`}
+		titleDefault={site.title}
+		description={description}
+		openGraph={{
+			basic: {
+				title: title,
+				type: 'website',
+				image: image,
+			},
+			optional: {
+				description: description,
+			},
+			image: {
+				alt: alt,
+			},
+		}}
+		,
+		canonical={canonicalURL}
+	/>
+	<link rel='manifest' href='/site.webmanifest' />
+</head>

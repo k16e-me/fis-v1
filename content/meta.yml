@@ -1,0 +1,12 @@
+site:
+  title: Farmtech (functional farming technology)
+  description: Farmtech is transforming farming by equipping grassroots producers with functional and affordable renewable energy.
+  theme: '#0A0A0A'
+
+nav:
+  - title: About
+    slug: about
+  - title: Work
+    slug: work
+  - title: Blog
+    slug: blog
