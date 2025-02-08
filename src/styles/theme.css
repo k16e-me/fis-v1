@@ -3,8 +3,16 @@
 @layer base {
     :root {
         /* Base */
+        --color-soil-950: #0A0A0A;
+        --color-soil-500: #737373;
 
-        /* Variable Colors */
+        /* Assigments */
+        --color-primary: var(--color-soil-950);
+        --color-primary-faint: var(--color-soil-500);
+
+        /* Usage */
+        --color-text-display: var(--color-primary);
+        --color-text-caption: var(--color-primary-faint);
 
         @media (prefers-color-scheme: dark) {
 

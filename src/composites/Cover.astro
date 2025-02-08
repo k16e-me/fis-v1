@@ -1,9 +1,12 @@
 ---
+import Text from '@atoms/Text.astro'
+
 const { text, class: classes, ...props } = Astro.props
 ---
 
 <div>
-	<h1 class='font-display uppercase'>
-		{text}
+	<h1 class='flex flex-col -space-y-3'>
+		<Text content='Coming' size='main' weight='extra' color='caption' uppercase loosen display/>
+		<Text content='Soon...' size='main' weight='extra' color='display' uppercase loosen display/>
 	</h1>
 </div>

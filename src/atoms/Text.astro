@@ -1,0 +1,62 @@
+---
+import { marked } from '@scripts/lib/marked-setup'
+
+const {
+	tag: Tag = 'span',
+	content,
+	size = 'sm',
+	lowercase,
+	uppercase,
+	weight = 'regular',
+	nowrap,
+	italic,
+	tighten,
+	loosen,
+	color = 'default',
+	dim,
+	dimmer,
+	dimmest,
+    display,
+	class: classes,
+	...props
+} = Astro.props
+const inlineContent = marked.parseInline(content)
+---
+
+<Tag
+	set:html={inlineContent}
+	{...props}
+	class:list={[
+        'antialiased',
+
+		// Font Sizes
+		size === 'main' && 'text-8xl',
+
+		// Font Weights
+		weight === 'regular' && 'font-normal',
+		weight === 'medium' && 'font-medium',
+		weight === 'semi' && 'font-semibold',
+		weight === 'bold' && 'font-bold',
+		weight === 'extra' && 'font-extrabold',
+
+		// Colors
+		color === 'default' && '',
+		color === 'display' && 'text-(--color-text-display)',
+		color === 'caption' && 'text-(--color-text-caption)',
+
+		// Booleans
+		lowercase && 'lowercase',
+		uppercase && 'uppercase',
+		tighten && '-tracking-[0.0225em]',
+		loosen && 'tracking-[0.0125em]',
+		nowrap && 'whitespace-nowrap',
+		italic && 'italic',
+		dim && 'opacity-90',
+		dimmer && 'opacity-70',
+		dimmest && 'opacity-40',
+        display && 'font-display',
+
+		// Classes Passed In
+		classes,
+	]}
+/>
