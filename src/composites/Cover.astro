@@ -9,8 +9,8 @@ const { text, class: classes, ...props } = Astro.props
 ---
 
 <Grid data-motion>
-	<div class="relative col-span-full row-span-full opacity-25">
-		<Image src={bg} alt={''}/>
+	<div class='relative col-span-full row-span-full opacity-25 -z-[1]'>
+		<Image src={bg} alt={''} />
 	</div>
 	<!-- Coming soon... -->
 	<div
@@ -39,7 +39,7 @@ const { text, class: classes, ...props } = Astro.props
 
 	<!-- Icon & Link -->
 	<div
-		class='p-(--gap-7) tablet:p-(--gap-8) laptop:p-(--gap-9) [grid-area:6/1/7/2] laptop:[grid-area:6/2/7/3] flex tablet:items-end opacity-0'
+		class='p-(--gap-7) tablet:p-(--gap-8) laptop:p-(--gap-9) [grid-area:6/1/7/2] laptop:[grid-area:6/2/7/3] flex tablet:items-end'
 		data-motion='symbol'>
 		<Icon name='symbol' class='h-11 tablet:h-12 shrink-0' />
 	</div>
@@ -70,6 +70,12 @@ const { text, class: classes, ...props } = Astro.props
 			name='logo'
 			class='w-32 tablet:w-40 laptop:w-48 text-(--color-text-display)'
 		/>
+	</div>
+
+	<!-- Lengthwise -->
+	<div
+		class='[grid-area:3/2/7/4] laptop:[grid-area:3/5/5/6] desktop:[grid-area:3/8/5/9] flex justify-end'>
+		<Icon name='lengthwise' class=' h-full !fill-none' />
 	</div>
 
 	<!-- Caption -->

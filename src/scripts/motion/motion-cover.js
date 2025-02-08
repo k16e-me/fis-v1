@@ -16,18 +16,18 @@ export function _motionCover() {
 
     animate(symbol,
         { x: [-100,0], opacity: [0,1] },
-        { delay: 1, duration: 0.35, ease: 'circInOut' }
+        { delay: 0.5, duration: 0.35, ease: 'circInOut' }
     )
     animate(link,
         { y: [100, 0], opacity: [0, 1] },
-        { delay: 1.5, duration: 0.75, ease: 'circInOut' }
+        { delay: 0.75, duration: 0.75, ease: 'circInOut' }
     )
     animate(logo,
         { y: [100, 0], opacity: [0, 1] },
-        { delay: 2, duration: 1, ease: 'circInOut' }
+        { delay: 1, duration: 1, ease: 'circInOut' }
     )
     animate(caption,
         { x: [100, 0], opacity: [0, 1] },
-        { delay: 2.5, duration: 1, ease: 'circInOut' }
+        { delay: 1.25, duration: 1, ease: 'circInOut' }
     )
 }
