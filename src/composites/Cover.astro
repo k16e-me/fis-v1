@@ -6,7 +6,7 @@ import Grid from '@layouts/Grid.astro'
 const { text, class: classes, ...props } = Astro.props
 ---
 
-<Grid class=''>
+<Grid class='' data-motion>
 	<!-- Coming soon... -->
 	<div
 		class='p-(--gap-7) tablet:p-(--gap-8) laptop:p-(--gap-9) [grid-area:2/1/4/4] laptop:[grid-area:2/2/4/6]'>
@@ -19,6 +19,7 @@ const { text, class: classes, ...props } = Astro.props
 				uppercase
 				loosen
 				display
+				class='opacity-0'
 			/>
 			<Text
 				content='Soon...'
@@ -28,6 +29,7 @@ const { text, class: classes, ...props } = Astro.props
 				uppercase
 				loosen
 				display
+				class='opacity-0'
 			/>
 		</h1>
 	</div>
