@@ -2,11 +2,16 @@
 import Text from '@atoms/Text.astro'
 import Icon from '@atoms/Icon.astro'
 import Grid from '@layouts/Grid.astro'
+import bg from '@content/images/noise.png'
+import { Image } from 'astro:assets'
 
 const { text, class: classes, ...props } = Astro.props
 ---
 
 <Grid data-motion>
+	<div class="relative col-span-full row-span-full opacity-25">
+		<Image src={bg} alt={''}/>
+	</div>
 	<!-- Coming soon... -->
 	<div
 		class='p-(--gap-7) tablet:p-(--gap-8) laptop:p-(--gap-9) [grid-area:2/1/4/4] laptop:[grid-area:2/2/4/6]'>

@@ -5,6 +5,7 @@
         /* Base */
         --color-soil-950: #0A0A0A;
         --color-soil-700: #404040;
+        --color-soil-600: #525252;
         --color-soil-500: #737373;
 
         --color-conifer-600: #439818;
@@ -12,7 +13,8 @@
 
         /* Assigments */
         --color-primary: var(--color-soil-950);
-        --color-primary-dark: var(--color-soil-700);
+        --color-primary-darker: var(--color-soil-700);
+        --color-primary-dark: var(--color-soil-600);
         --color-primary-faint: var(--color-soil-500);
 
         --color-accent-1: var(--color-conifer-600);
