@@ -7,6 +7,7 @@ export function _motionCover() {
     const symbol = _q('[data-motion="symbol"]', section)
     const link = _q('[data-motion="link"]', section)
     const logo = _q('[data-motion="logo"]', section)
+    const caption = _q('[data-motion="caption"]', section)
 
     animate(ts,
         { y: [50,0], opacity: [0,1] },
