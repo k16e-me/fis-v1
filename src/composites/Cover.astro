@@ -6,7 +6,7 @@ import Grid from '@layouts/Grid.astro'
 const { text, class: classes, ...props } = Astro.props
 ---
 
-<Grid class='' data-motion>
+<Grid data-motion>
 	<!-- Coming soon... -->
 	<div
 		class='p-(--gap-7) tablet:p-(--gap-8) laptop:p-(--gap-9) [grid-area:2/1/4/4] laptop:[grid-area:2/2/4/6]'>
@@ -19,7 +19,6 @@ const { text, class: classes, ...props } = Astro.props
 				uppercase
 				loosen
 				display
-				class='opacity-0'
 			/>
 			<Text
 				content='Soon...'
@@ -29,20 +28,20 @@ const { text, class: classes, ...props } = Astro.props
 				uppercase
 				loosen
 				display
-				class='opacity-0'
 			/>
 		</h1>
 	</div>
 
 	<!-- Icon & Link -->
 	<div
-		class='p-(--gap-7) tablet:p-(--gap-8) laptop:p-(--gap-9) [grid-area:6/1/7/2] laptop:[grid-area:6/2/7/3] flex tablet:items-end'>
+		class='p-(--gap-7) tablet:p-(--gap-8) laptop:p-(--gap-9) [grid-area:6/1/7/2] laptop:[grid-area:6/2/7/3] flex tablet:items-end opacity-0'
+		data-motion='symbol'>
 		<Icon name='symbol' class='h-11 tablet:h-12 shrink-0' />
 	</div>
 
 	<!-- Link -->
 	<div
-		class='p-(--gap-7) tablet:p-(--gap-8) [grid-area:6/2/7/4] laptop:[grid-area:6/3/7/5] flex items-center laptop:items-end'>
+		class='p-(--gap-7) tablet:p-(--gap-8) [grid-area:6/2/7/4] laptop:[grid-area:6/3/7/5] flex items-center laptop:items-end' data-motion="link">
 		<div class='laptop:pb-(--gap-6)'>
 			<a
 				href='https://linkedin.com/farmtechng'
@@ -59,7 +58,7 @@ const { text, class: classes, ...props } = Astro.props
 
 	<!-- Logo -->
 	<div
-		class='p-(--gap-7) tablet:p-(--gap-8) laptop:p-(--gap-9) [grid-area:3/1/4/4] laptop:[grid-area:4/4/5/6] desktop:[grid-area:4/6/5/9] place-content-end laptop:place-content-start flex flex-col items-end'>
+		class='p-(--gap-7) tablet:p-(--gap-8) laptop:p-(--gap-9) [grid-area:3/1/4/4] laptop:[grid-area:4/4/5/6] desktop:[grid-area:4/6/5/9] place-content-end laptop:place-content-start flex flex-col items-end' data-motion="logo">
 		<Icon
 			name='logo'
 			class='w-32 tablet:w-40 laptop:w-48 text-(--color-text-display)'
