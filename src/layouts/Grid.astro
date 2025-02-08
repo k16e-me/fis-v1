@@ -4,12 +4,12 @@ const { tag: Tag = 'div', class: classes, ...props } = Astro.props
 
 <Tag
 	class:list={[
-		'grid grid-cols-4 laptop:grid-cols-8 desktop:grid-cols-12 grid-rows-5 laptop:grid-rows-4 h-screen max-h-screen overflow-clip',
+		'grid grid-cols-4 laptop:grid-cols-8 desktop:grid-cols-12 grid-rows-5 laptop:grid-rows-4 h-svh laptop:h-dvh overflow-clip',
 		classes,
 	]}
 	{...props}>
 	<div
-		class='[grid-area:1/1/7/5] laptop:[grid-area:1/1/5/13] desktop:[grid-area:1/1/5/13] grid grid-cols-subgrid grid-rows-subgrid h-screen'>
+		class='[grid-area:1/1/7/5] laptop:[grid-area:1/1/5/13] desktop:[grid-area:1/1/5/13] grid grid-cols-subgrid grid-rows-subgrid h-svh laptop:h-dvh'>
 		<slot />
 	</div>
 </Tag>
