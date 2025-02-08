@@ -22,4 +22,12 @@ export function _motionCover() {
         { y: [100, 0], opacity: [0, 1] },
         { delay: 1.5, duration: 0.75, ease: 'circInOut' }
     )
+    animate(logo,
+        { y: [100, 0], opacity: [0, 1] },
+        { delay: 2, duration: 1, ease: 'circInOut' }
+    )
+    animate(caption,
+        { x: [100, 0], opacity: [0, 1] },
+        { delay: 2.5, duration: 1, ease: 'circInOut' }
+    )
 }
