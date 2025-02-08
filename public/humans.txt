@@ -4,35 +4,10 @@ Komponents & Solutions Rack Ltd was built by Kabolobari Benakole, a human, sayis
 Design: Figma
 SSG: Astro
 CSS: TailwindCSS
-CMS: Storyblok
-Animations: GSAP
-State Managament: nanostores
-Page Transitions: Swupjs
+Animations: Motion
 Hosting: Netlify
 IDE: VS Code
 Code Repository: Github
 Web: HTML, CSS, & JS
 
 /* THANKS */
-- Icons => David Warrington [https://ellodave.dev/blog/article/using-svgs-as-astro-components-and-inline-css/]
-- Grids => Sarah Drasner [https://cssgrid-generator.netlify.app/]
-- Nav active link => Chen Yang [https://www.cyishere.dev/blog/astro-active-nav-item] (some direction)
-- NPM Upgrades => Natalie Pina [https://www.freecodecamp.org/news/how-to-update-npm-dependencies/]
-- Slugify => byby [https://dev.to/bybydev/how-to-slugify-a-string-in-javascript-4o9n]
-- Unslash => Stack Overflow [https://stackoverflow.com/questions/6680825/return-string-without-trailing-slash/36242700#36242700]
-- Product Sorting => Stack Overflow [https://stackoverflow.com/questions/979256/sorting-an-array-of-objects-by-property-values]
-- States => Make Use Of [https://www.makeuseof.com/astro-state-manage-applications-how-to/]
-- JSON Stringify => FreeCodeCamp [https://www.freecodecamp.org/news/json-stringify-example-how-to-parse-a-json-object-with-javascript/]
-- Fixed Relative Parent => Stack Overflow [https://stackoverflow.com/questions/5209814/can-i-position-an-element-fixed-relative-to-parent#7823145]
-- Sticky Within Flex Parent => Stack Overflow [https://stackoverflow.com/questions/44446671/my-position-sticky-element-isnt-sticky-when-using-flexbox#44446672]
-- Capitalize => Example Javascript [https://examplejavascript.com/lodash/capitalize/]
-- Siblings Helper => JavaScript Tutorial Website [https://www.javascripttutorial.net/javascript-dom/javascript-siblings/]
-- Better isEmpty => Stack Overflow [https://stackoverflow.com/questions/43233102/lodash-isempty-and-has-method-vs-simple-check]
-- Function as Module => Stack Overflow [https://stackoverflow.com/questions/13218472/calling-a-function-defined-inside-another-function-in-javascript]
-- Args to Event Listeners => Plain English [https://plainenglish.io/blog/passing-arguments-to-event-listeners-in-javascript-1a81bc397ecb]
-- Map Array n times of n => Stack Overflow [https://stackoverflow.com/questions/37888470/mapping-array-in-javascript-with-sequential-numbers#37889106]
-- Infinite looping gsap => GSAP Forum [https://gsap.com/community/forums/topic/37469-how-to-loop-a-gsap-animation-help/]
-- CSS nth-child generator => [https://nthchild.kawalekkodu.pl/en/]
-- Sorting collection by a param => Casey James Perno [https://caseyjamesperno.com/blog/sort-astro-glob/]
-- Filter an Object => Mastering JS [https://masteringjs.io/tutorials/fundamentals/filter-object]
-- Automatically import Components in Astro MDX => Ryan Trimble [https://rimdev.io/automatically-import-components-in-astro-mdx]
