@@ -1,58 +1,77 @@
 ---
 import Text from '@atoms/Text.astro'
 import Icon from '@atoms/Icon.astro'
+import Grid from '@layouts/Grid.astro'
 
 const { text, class: classes, ...props } = Astro.props
 ---
 
-<div>
+<Grid class=''>
 	<!-- Coming soon... -->
-	<h1 class='flex flex-col -space-y-3'>
-		<Text
-			content='Coming'
-			size='main'
-			weight='extra'
-			color='caption'
-			uppercase
-			loosen
-			display
-		/>
-		<Text
-			content='Soon...'
-			size='main'
-			weight='extra'
-			color='display'
-			uppercase
-			loosen
-			display
-		/>
-	</h1>
+	<div
+		class='p-(--gap-7) tablet:p-(--gap-8) laptop:p-(--gap-9) [grid-area:2/1/4/4] laptop:[grid-area:2/2/4/6]'>
+		<h1 class='flex flex-col -space-y-3'>
+			<Text
+				content='Coming'
+				size='main'
+				weight='extra'
+				color='caption'
+				uppercase
+				loosen
+				display
+			/>
+			<Text
+				content='Soon...'
+				size='main'
+				weight='extra'
+				color='display'
+				uppercase
+				loosen
+				display
+			/>
+		</h1>
+	</div>
+
+	<!-- Icon & Link -->
+	<div
+		class='p-(--gap-7) tablet:p-(--gap-8) laptop:p-(--gap-9) [grid-area:6/1/7/2] flex justify-center items-center tablet:justify-end tablet:items-end'>
+		<Icon name='symbol' class='h-11 tablet:h-12 shrink-0' />
+	</div>
 
 	<!-- Link -->
-	<div>
-		<Icon name='symbol' class='h-12' />
+	<div
+		class='p-(--gap-7) tablet:p-(--gap-8) [grid-area:6/2/7/5] flex items-center laptop:items-end'>
+		<div class='laptop:pb-(--gap-6)'>
+			<a
+				href='https://linkedin.com/farmtechng'
+				class='text-(--color-interactive) hover:text-(--color-interactive-hover)'>
+				<Text
+					content={`Linkedin.com/farmtechNG`}
+					size='base-to-small'
+					weight='medium'
+					class='text-inherit'
+				/>
+			</a>
+		</div>
 	</div>
-	<a
-		href='https://linkedin.com/farmtechng'
-		class='text-(--color-interactive) hover:text-(--color-interactive-hover)'>
-		<Text
-			content={`Linkedin.com/farmtechNG`}
-            size='small'
-			weight='medium'
-			class='text-inherit'
-		/>
-	</a>
 
 	<!-- Logo -->
-	<div>
-		<Icon name='logo' class='h-12 w-full text-(--color-text-display)' />
+	<div
+		class='p-(--gap-7) tablet:p-(--gap-8) laptop:p-(--gap-9) [grid-area:3/1/4/4] laptop:[grid-area:4/4/5/6] desktop:[grid-area:4/6/5/9] place-content-end laptop:place-content-start flex flex-col items-end'>
+		<Icon
+			name='logo'
+			class='w-32 tablet:w-40 laptop:w-48 text-(--color-text-display)'
+		/>
 	</div>
 
 	<!-- Caption -->
-	<p>
+	<div
+		class='p-(--gap-7) tablet:p-(--gap-8) laptop:p-(--gap-9) [grid-area:4/2/5/4] laptop:[grid-area:4/6/5/8] desktop:[grid-area:4/9/5/12]'>
 		<Text
+			tag='p'
 			content='Functional farming powered by renewable energy.'
 			weight='medium'
+			class='text-right laptop:text-left'
 		/>
-	</p>
-</div>
+	</div>
+</Grid>

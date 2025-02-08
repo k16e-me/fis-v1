@@ -13,11 +13,23 @@
 @theme {
     /*  Typescaling (Perfect Fourth */
     --type-scale: 1.4;
-    --scale-6: 6.225rem;
-    --scale-5: 5.225rem;
-    --scale-4: 4.225rem;
-    --scale-3: 3.225rem;
-    --scale-2: 2.225rem;
+    --scale-6: 6.325rem;
+    --scale-5: 5.325rem;
+    --scale-4: 4.325rem;
+    --scale-3: 3.325rem;
+    --scale-2: 2.325rem;
+
+    /* Spacing Scale */
+    --gap-0: 0.0625rem;
+    --gap-1: 0.125rem;
+    --gap-2: 0.25rem;
+    --gap-3: 0.5rem;
+    --gap-4: 0.75rem;
+    --gap-5: 0.875rem;
+    --gap-6: 1rem;
+    --gap-7: 1.25rem;
+    --gap-8: 1.5rem;
+    --gap-9: 1.875rem;
 
     /* Breakpoints */
     --breakpoint-*: initial;
@@ -30,7 +42,6 @@
     --font-sans: 'Plus Jakarta Sans Variable', 'sans-serif';
 
     /* Font sizes x line-heights */
-
     --text-6xl: var(--scale-6);
     --text-5xl: var(--scale-5);
     --text-4xl: var(--scale-4);

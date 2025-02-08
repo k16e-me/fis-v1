@@ -33,6 +33,7 @@ const inlineContent = marked.parseInline(content)
 		size === 'main' && 'text-3xl tablet:text-4xl laptop:text-5xl desktop:text-6xl',
 		size === 'small' && 'text-xl',
 		size === 'base' && 'text-base',
+		size === 'base-to-small' && 'text-base tablet:text-xl',
 
 		// Font Weights
 		weight === 'regular' && 'font-normal',
