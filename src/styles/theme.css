@@ -4,15 +4,27 @@
     :root {
         /* Base */
         --color-soil-950: #0A0A0A;
+        --color-soil-700: #404040;
         --color-soil-500: #737373;
+
+        --color-conifer-600: #439818;
+        --color-conifer-500: #5BBE24;
 
         /* Assigments */
         --color-primary: var(--color-soil-950);
+        --color-primary-dark: var(--color-soil-700);
         --color-primary-faint: var(--color-soil-500);
+
+        --color-accent-1: var(--color-conifer-600);
+        --color-accent-1-light: var(--color-conifer-500);
 
         /* Usage */
         --color-text-display: var(--color-primary);
+        --color-text-body: var(--color-primary-dark);
         --color-text-caption: var(--color-primary-faint);
+
+        --color-interactive: var(--color-accent-1-light);
+        --color-interactive-hover: var(--color-accent-1);
 
         @media (prefers-color-scheme: dark) {
 

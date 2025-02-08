@@ -1,12 +1,58 @@
 ---
 import Text from '@atoms/Text.astro'
+import Icon from '@atoms/Icon.astro'
 
 const { text, class: classes, ...props } = Astro.props
 ---
 
 <div>
+	<!-- Coming soon... -->
 	<h1 class='flex flex-col -space-y-3'>
-		<Text content='Coming' size='main' weight='extra' color='caption' uppercase loosen display/>
-		<Text content='Soon...' size='main' weight='extra' color='display' uppercase loosen display/>
+		<Text
+			content='Coming'
+			size='main'
+			weight='extra'
+			color='caption'
+			uppercase
+			loosen
+			display
+		/>
+		<Text
+			content='Soon...'
+			size='main'
+			weight='extra'
+			color='display'
+			uppercase
+			loosen
+			display
+		/>
 	</h1>
+
+	<!-- Link -->
+	<div>
+		<Icon name='symbol' class='h-12' />
+	</div>
+	<a
+		href='https://linkedin.com/farmtechng'
+		class='text-(--color-interactive) hover:text-(--color-interactive-hover)'>
+		<Text
+			content={`Linkedin.com/farmtechNG`}
+            size='small'
+			weight='medium'
+			class='text-inherit'
+		/>
+	</a>
+
+	<!-- Logo -->
+	<div>
+		<Icon name='logo' class='h-12 w-full text-(--color-text-display)' />
+	</div>
+
+	<!-- Caption -->
+	<p>
+		<Text
+			content='Functional farming powered by renewable energy.'
+			weight='medium'
+		/>
+	</p>
 </div>
