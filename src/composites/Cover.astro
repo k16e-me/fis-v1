@@ -64,24 +64,22 @@ const { text, class: classes, ...props } = Astro.props
 
 	<!-- Link -->
 	<div
-		class='p-(--gap-9) [grid-area:6/2/7/5] laptop:[grid-area:6/3/7/6] flex items-center laptop:items-end'
+		class='p-(--gap-9) [grid-area:1/3/2/5] laptop:[grid-area:1/6/2/9] desktop:[grid-area:1/9/2/12] flex items-center justify-end'
 		data-motion='link'>
-		<div class='laptop:pb-(--gap-9)'>
-			<a
-				href='https://linkedin.com/farmtechng'
-				class='text-(--color-interactive) hover:text-(--color-interactive-hover)'>
-				<Text
-					content={`Linkedin.com/farmtechNG`}
-					weight='medium'
-					class='text-inherit'
-				/>
-			</a>
-		</div>
+        <a
+            href='https://linkedin.com/farmtechng'
+            class='text-(--color-interactive) hover:text-(--color-interactive-hover)'>
+            <Text
+                content={`Linkedin.com/farmtechNG`}
+                weight='medium'
+                class='text-inherit'
+            />
+        </a>
 	</div>
 
 	<!-- Logo -->
 	<div
-		class='p-(--gap-9) [grid-area:3/1/4/5] laptop:[grid-area:4/4/5/7] desktop:[grid-area:4/6/5/9] place-content-end laptop:place-content-start flex flex-col items-end'
+		class='p-(--gap-9) pb-(--gap-6) laptop:pb-(--gap-9) [grid-area:4/1/5/5] laptop:[grid-area:4/4/5/7] desktop:[grid-area:4/6/5/9] place-content-end laptop:place-content-start flex flex-col items-end'
 		data-motion='logo'>
 		<Icon
 			name='logo'
@@ -91,7 +89,7 @@ const { text, class: classes, ...props } = Astro.props
 
 	<!-- Caption -->
 	<div
-		class='pr-(--gap-9) laptop:p-(--gap-9) [grid-area:4/2/5/5] laptop:[grid-area:4/7/5/13] desktop:[grid-area:4/9/7/12]'
+		class='pr-(--gap-9) laptop:p-(--gap-9) [grid-area:5/2/6/5] laptop:[grid-area:4/7/5/13] desktop:[grid-area:4/9/7/12]'
 		data-motion='caption'>
 		<Text
 			tag='p'

@@ -13,26 +13,26 @@ export function _motionCover() {
         [
             ts,
             { y: [48, 0], opacity: [0, 1] },
-            { delay: stagger(0.1), duration: 0.5, ease: 'circInOut' }
-        ],
-        [
-            symbol,
-            { x: [-100, 0], opacity: [0, 1] },
-            { duration: 0.3, ease: 'circInOut' }
+            { delay: stagger(0.1), duration: 0.4, ease: 'circInOut' }
         ],
         [
             link,
-            { y: [100, 0], opacity: [0, 1] },
-            { duration: 0.5, ease: 'circInOut' }
+            { x: [48, 0], opacity: [0, 1] },
+            { duration: 0.3, ease: 'circInOut' }
+        ],
+        [
+            symbol,
+            { x: [-48, 0], opacity: [0, 1] },
+            { duration: 0.3, ease: 'circInOut' }
         ],
         [
             logo,
-            { y: [100, 0], opacity: [0, 1] },
+            { y: [48, 0], opacity: [0, 1] },
             { duration: 0.5, ease: 'circInOut' }
         ],
         [
             caption,
-            { x: [100, 0], opacity: [0, 1] },
+            { x: [48, 0], opacity: [0, 1] },
             { duration: 0.5, ease: 'circInOut' }
         ]
     ])
