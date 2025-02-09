@@ -1,4 +1,5 @@
 import { _motionCover } from './motion/motion-cover'
+import { _motionLinks } from './motion/motion-links'
 
 document.addEventListener('DOMContentLoaded', () => {
     once()
@@ -6,6 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
 })
 
 function init() {
+    _motionLinks()
     _motionCover()
 }
 
