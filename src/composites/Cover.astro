@@ -56,7 +56,6 @@ const { text, class: classes, ...props } = Astro.props
 				class='text-(--color-interactive) hover:text-(--color-interactive-hover)'>
 				<Text
 					content={`Linkedin.com/farmtechNG`}
-					size='base-to-small'
 					weight='medium'
 					class='text-inherit'
 				/>
@@ -77,7 +76,7 @@ const { text, class: classes, ...props } = Astro.props
 	<!-- Lengthwise -->
 	<div
 		class='[grid-area:3/2/7/4] laptop:[grid-area:3/5/5/6] desktop:[grid-area:3/8/5/9] flex justify-end'>
-		<Icon name='lengthwise' class='h-full !fill-none' />
+		<Icon name='lengthwise' class='h-full text-(--color-border)' />
 	</div>
 
 	<!-- Caption -->
@@ -88,6 +87,7 @@ const { text, class: classes, ...props } = Astro.props
 			tag='p'
 			content='Functional farming powered by renewable energy.'
 			weight='medium'
+			color='caption'
 			class='text-right laptop:text-left'
 		/>
 	</div>
