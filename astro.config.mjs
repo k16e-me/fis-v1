@@ -6,7 +6,7 @@ import remarkFigureCaption from '@microflash/remark-figure-caption'
 import widont from 'rehype-widont'
 
 export default defineConfig({
-    site: 'https://k16e.com',
+    site: 'https://fis-v1.k16e.com',
     prefetch: {
         prefetchAll: true,
         ignoreSlowConnection: true
