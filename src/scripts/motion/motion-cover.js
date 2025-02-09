@@ -14,12 +14,12 @@ export function _motionCover() {
         [
             ts,
             { y: [48, 0], opacity: [0, 1] },
-            { delay: stagger(0.1), duration: 0.4, ease: 'circInOut' }
+            { delay: stagger(0.1), duration: 0.5, ease: 'circInOut' }
         ],
         [
             ellipsis,
             { y: [4, 0], opacity: [0, 1] },
-            { delay: stagger(0.1), duration: 0.4, ease: 'linear' }
+            { delay: stagger(0.1), duration: 0.5, ease: 'linear' }
         ],
         [
             link,
