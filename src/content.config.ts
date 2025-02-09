@@ -19,15 +19,9 @@ const meta = defineCollection({
             title: z.string(),
             description: z.string(),
             theme: z.string(),
-        }),
-        nav: z.array(
-            z.object({
-                title: z.string(),
-                slug: z.string(),
-            })
-        ),
+        })
     }),
-});
+})
 
 
 const pages = defineCollection({
