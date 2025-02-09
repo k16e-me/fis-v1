@@ -17,7 +17,7 @@ const { text, class: classes, ...props } = Astro.props
 	<!-- Main Headline -->
 	<div
 		class='p-(--gap-7) tablet:p-(--gap-8) laptop:p-(--gap-9) [grid-area:2/1/4/4] laptop:[grid-area:2/2/4/6]'>
-		<h1 class='flex gap-4'>
+		<h1 class='flex flex-col tablet:flex-row tablet:gap-4'>
 			<Text
 				content='Coming'
 				size='main'
@@ -37,6 +37,7 @@ const { text, class: classes, ...props } = Astro.props
 				loosen
 				display
 				data-motion='heading'
+                class='-translate-y-3 tablet:translate-y-0'
 			/>
 		</h1>
 	</div>
