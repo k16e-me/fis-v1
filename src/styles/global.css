@@ -13,11 +13,11 @@
 @theme {
     /*  Typescaling (Perfect Fourth */
     --type-scale: 1.4;
-    --scale-6: 6.325rem;
-    --scale-5: 5.325rem;
-    --scale-4: 4.325rem;
-    --scale-3: 3.325rem;
-    --scale-2: 2.325rem;
+    --scale-6: 6.1125rem;
+    --scale-5: 5.1125rem;
+    --scale-4: 4.1125rem;
+    --scale-3: 3.1125rem;
+    --scale-2: 2.1125rem;
     --text-base--line-height: 1.414;
 
     /* Spacing Scale */

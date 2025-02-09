@@ -29,8 +29,9 @@ const { text, class: classes, ...props } = Astro.props
 
 	<!-- Main Headline -->
 	<div
-		class='p-(--gap-9) [grid-area:2/1/4/5] laptop:[grid-area:2/2/4/9] desktop:[grid-area:2/2/4/13]'>
-		<h1 class='flex flex-col tablet:flex-row tablet:gap-4'>
+		class='p-(--gap-9) [grid-area:2/1/4/5] laptop:[grid-area:2/2/4/9] desktop:[grid-area:2/2/4/9]'>
+		<h1
+			class='flex flex-col tablet:flex-row tablet:flex-nowrap tablet:gap-3'>
 			<Text
 				content='Coming'
 				size='main'
@@ -41,17 +42,34 @@ const { text, class: classes, ...props } = Astro.props
 				display
 				data-motion='heading'
 			/>
-			<Text
-				content='Soon...'
-				size='main'
-				weight='extra'
-				color='display'
-				uppercase
-				loosen
-				display
-				data-motion='heading'
-				class='-translate-y-3 tablet:translate-y-0'
-			/>
+			<span
+				class='-translate-y-3 tablet:translate-y-0 flex flex-nowrap'
+				data-motion='heading'>
+				<Text
+					content='Soon'
+					size='main'
+					weight='extra'
+					color='display'
+					uppercase
+					loosen
+					display
+				/>
+				{
+					[1,2,3].map((i) => (
+						<Text
+							key={i}
+							content='.'
+							size='main'
+							weight='extra'
+							color='display'
+							uppercase
+							loosen
+							display
+                            data-motion='ellipsis'
+						/>
+					))
+				}
+			</span>
 		</h1>
 	</div>
 
@@ -66,15 +84,15 @@ const { text, class: classes, ...props } = Astro.props
 	<div
 		class='p-(--gap-9) [grid-area:1/3/2/5] laptop:[grid-area:1/6/2/9] desktop:[grid-area:1/9/2/12] flex items-center justify-end'
 		data-motion='link'>
-        <a
-            href='https://linkedin.com/farmtechng'
-            class='text-(--color-interactive) hover:text-(--color-interactive-hover)'>
-            <Text
-                content={`Linkedin.com/farmtechNG`}
-                weight='medium'
-                class='text-inherit'
-            />
-        </a>
+		<a
+			href='https://linkedin.com/farmtechng'
+			class='text-(--color-interactive) hover:text-(--color-interactive-hover)'>
+			<Text
+				content={`Linkedin.com/farmtechNG`}
+				weight='medium'
+				class='text-inherit'
+			/>
+		</a>
 	</div>
 
 	<!-- Logo -->
@@ -83,7 +101,7 @@ const { text, class: classes, ...props } = Astro.props
 		data-motion='logo'>
 		<Icon
 			name='logo'
-			class='w-32 tablet:w-40 laptop:w-48 text-(--color-text-display)'
+			class='w-36 tablet:w-40 laptop:w-48 text-(--color-text-display)'
 		/>
 	</div>
 

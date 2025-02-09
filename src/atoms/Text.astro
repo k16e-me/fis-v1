@@ -30,7 +30,7 @@ const inlineContent = marked.parseInline(content)
 		'antialiased',
 
 		// Font Sizes
-		size === 'main' && 'text-3xl tablet:text-4xl laptop:text-5xl desktop:text-6xl -translate-x-0.5',
+		size === 'main' && 'text-3xl tablet:text-4xl laptop:text-5xl desktop:text-6xl -translate-x-1.25',
 		size === 'small' && 'text-xl',
 		size === 'base' && 'text-base',
 		size === 'base-to-small' && 'text-base tablet:text-xl',
@@ -51,8 +51,8 @@ const inlineContent = marked.parseInline(content)
 		// Booleans
 		lowercase && 'lowercase',
 		uppercase && 'uppercase',
-		tighten && '-tracking-[0.0225em]',
-		loosen && 'tracking-[0.0125em]',
+		tighten && '-tracking-[0.0115em]',
+		loosen && 'tracking-[0.0115em]',
 		nowrap && 'whitespace-nowrap',
 		italic && 'italic',
 		dim && 'opacity-90',
