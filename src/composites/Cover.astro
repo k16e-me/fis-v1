@@ -10,13 +10,26 @@ const { text, class: classes, ...props } = Astro.props
 
 <Grid data-motion-wrapper>
 	<!-- Background Image -->
-	<div class='relative col-span-full row-span-full opacity-25 -z-[1]'>
+	<div class='relative col-span-full row-span-full opacity-20 -z-[1]'>
 		<Image src={bg} alt={''} class='size-full object-cover' />
+	</div>
+
+	<!-- Crosswise -->
+	<hr
+		class='[grid-area:2/1/4/5] laptop:[grid-area:2/1/4/9] desktop:[grid-area:2/1/4/13] border-(--color-border-lightest)'
+	/>
+	<!-- Marginal -->
+	<div
+		class='[grid-area:1/1/7/2] laptop:[grid-area:1/2/5/3] desktop:[grid-area:1/2/5/3] bg-(--color-border-lightest) inline-flex w-0.25 translate-x-3 laptop:translate-x-0'>
+	</div>
+	<!-- Lengthwise -->
+	<div
+		class='[grid-area:1/4/7/5] laptop:[grid-area:1/7/5/8] desktop:[grid-area:1/9/5/10] bg-(--color-border-lightest) w-0.25 inline-flex absolute right-3 h-screen laptop:static laptop:h-auto'>
 	</div>
 
 	<!-- Main Headline -->
 	<div
-		class='p-(--gap-7) tablet:p-(--gap-8) laptop:p-(--gap-9) [grid-area:2/1/4/4] laptop:[grid-area:2/2/4/6]'>
+		class='p-(--gap-8) laptop:p-(--gap-9) [grid-area:2/1/4/5] laptop:[grid-area:2/2/4/9] desktop:[grid-area:2/2/4/13]'>
 		<h1 class='flex flex-col tablet:flex-row tablet:gap-4'>
 			<Text
 				content='Coming'
@@ -37,21 +50,21 @@ const { text, class: classes, ...props } = Astro.props
 				loosen
 				display
 				data-motion='heading'
-                class='-translate-y-3 tablet:translate-y-0'
+				class='-translate-y-3 tablet:translate-y-0'
 			/>
 		</h1>
 	</div>
 
 	<!-- Icon & Link -->
 	<div
-		class='p-(--gap-7) tablet:p-(--gap-8) laptop:p-(--gap-9) [grid-area:6/1/7/2] laptop:[grid-area:6/2/7/3] flex items-center justify-center tablet:items-end'
+		class='p-(--gap-8) laptop:p-(--gap-9) [grid-area:6/1/7/2] laptop:[grid-area:6/2/7/3] flex items-end'
 		data-motion='symbol'>
 		<Icon name='symbol' class='h-12 tablet:h-14 shrink-0' />
 	</div>
 
 	<!-- Link -->
 	<div
-		class='p-(--gap-7) tablet:p-(--gap-8) [grid-area:6/2/7/5] laptop:[grid-area:6/3/7/6] flex items-center laptop:items-end'
+		class='p-(--gap-8) [grid-area:6/2/7/5] laptop:[grid-area:6/3/7/6] flex items-center laptop:items-end'
 		data-motion='link'>
 		<div class='laptop:pb-(--gap-6)'>
 			<a
@@ -68,7 +81,7 @@ const { text, class: classes, ...props } = Astro.props
 
 	<!-- Logo -->
 	<div
-		class='p-(--gap-7) tablet:p-(--gap-8) laptop:p-(--gap-9) [grid-area:3/1/4/5] laptop:[grid-area:4/4/5/7] desktop:[grid-area:4/6/5/9] place-content-end laptop:place-content-start flex flex-col items-end'
+		class='p-(--gap-8) laptop:p-(--gap-9) [grid-area:3/1/4/5] laptop:[grid-area:4/4/5/7] desktop:[grid-area:4/6/5/9] place-content-end laptop:place-content-start flex flex-col items-end'
 		data-motion='logo'>
 		<Icon
 			name='logo'
