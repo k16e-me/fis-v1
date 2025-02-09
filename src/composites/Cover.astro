@@ -8,7 +8,7 @@ import { Image } from 'astro:assets'
 const { text, class: classes, ...props } = Astro.props
 ---
 
-<Grid data-motion>
+<Grid data-motion-wrapper>
 	<div class='relative col-span-full row-span-full opacity-25 -z-[1]'>
 		<Image src={bg} alt={''} />
 	</div>
@@ -24,6 +24,7 @@ const { text, class: classes, ...props } = Astro.props
 				uppercase
 				loosen
 				display
+				data-motion='heading'
 			/>
 			<Text
 				content='Soon...'
@@ -33,6 +34,7 @@ const { text, class: classes, ...props } = Astro.props
 				uppercase
 				loosen
 				display
+				data-motion='heading'
 			/>
 		</h1>
 	</div>
@@ -75,7 +77,7 @@ const { text, class: classes, ...props } = Astro.props
 	<!-- Lengthwise -->
 	<div
 		class='[grid-area:3/2/7/4] laptop:[grid-area:3/5/5/6] desktop:[grid-area:3/8/5/9] flex justify-end'>
-		<Icon name='lengthwise' class=' h-full !fill-none' />
+		<Icon name='lengthwise' class='h-full !fill-none' />
 	</div>
 
 	<!-- Caption -->

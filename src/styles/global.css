@@ -51,3 +51,4 @@
 
 button { text-align: inherit; }
 svg { @apply pointer-events-none flex-shrink-0 fill-current; }
+[data-motion] { @apply opacity-0; }
