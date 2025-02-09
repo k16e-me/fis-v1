@@ -9,13 +9,15 @@ const { text, class: classes, ...props } = Astro.props
 ---
 
 <Grid data-motion-wrapper>
+	<!-- Background Image -->
 	<div class='relative col-span-full row-span-full opacity-25 -z-[1]'>
-		<Image src={bg} alt={''} />
+		<Image src={bg} alt={''} class='size-full object-cover' />
 	</div>
-	<!-- Coming soon... -->
+
+	<!-- Main Headline -->
 	<div
 		class='p-(--gap-7) tablet:p-(--gap-8) laptop:p-(--gap-9) [grid-area:2/1/4/4] laptop:[grid-area:2/2/4/6]'>
-		<h1 class='flex flex-col -space-y-3'>
+		<h1 class='flex flex-col'>
 			<Text
 				content='Coming'
 				size='main'
@@ -41,9 +43,9 @@ const { text, class: classes, ...props } = Astro.props
 
 	<!-- Icon & Link -->
 	<div
-		class='p-(--gap-7) tablet:p-(--gap-8) laptop:p-(--gap-9) [grid-area:6/1/7/2] laptop:[grid-area:6/2/7/3] flex tablet:items-end'
+		class='p-(--gap-7) tablet:p-(--gap-8) laptop:p-(--gap-9) [grid-area:6/1/7/2] laptop:[grid-area:6/2/7/3] flex items-center justify-center tablet:items-end'
 		data-motion='symbol'>
-		<Icon name='symbol' class='h-11 tablet:h-12 shrink-0' />
+		<Icon name='symbol' class='h-12 tablet:h-14 shrink-0' />
 	</div>
 
 	<!-- Link -->
@@ -57,7 +59,7 @@ const { text, class: classes, ...props } = Astro.props
 				<Text
 					content={`Linkedin.com/farmtechNG`}
 					weight='medium'
-					class='text-inherit'
+					class='text-inherit break-all'
 				/>
 			</a>
 		</div>
@@ -71,12 +73,6 @@ const { text, class: classes, ...props } = Astro.props
 			name='logo'
 			class='w-32 tablet:w-40 laptop:w-48 text-(--color-text-display)'
 		/>
-	</div>
-
-	<!-- Lengthwise -->
-	<div
-		class='[grid-area:3/2/7/4] laptop:[grid-area:3/5/5/6] desktop:[grid-area:3/8/5/9] flex justify-end'>
-		<Icon name='lengthwise' class='h-full text-(--color-border)' />
 	</div>
 
 	<!-- Caption -->
