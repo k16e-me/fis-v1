@@ -12,20 +12,15 @@ async function imageTransform(src: string) {
     return src
 }
 
-const flexibleSchema = z.record(
-    z.string(),
-    z.union([
-        z.string(),
-        z.number(),
-        z.boolean(),
-        z.array(z.any()),
-        z.record(z.string(), z.any())
-    ])
-)
-
 const meta = defineCollection({
     loader: glob({ pattern: 'meta.{yaml,yml,json}', base: './content' }),
-    schema: flexibleSchema
+    schema: z.object({
+        site: z.object({
+            title: z.string(),
+            description: z.string(),
+            theme: z.string(),
+        })
+    }),
 })
 
 
