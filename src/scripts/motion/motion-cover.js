@@ -45,6 +45,7 @@ export function _motionCover() {
         defaultTransition: {
             duration: 0.3,
             ease: 'circInOut',
+            delay: 0.5
         }
     })
 }
