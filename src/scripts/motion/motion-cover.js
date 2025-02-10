@@ -14,7 +14,7 @@ export function _motionCover() {
         [
             ts,
             { y: [48, 0], opacity: [0, 1], rotateX: [90, 0] },
-            { delay: stagger(0.1), duration: 0.5 }
+            { delay: stagger(0.1), duration: 0.5, type: 'spring' }
         ],
         [
             ellipsis,
