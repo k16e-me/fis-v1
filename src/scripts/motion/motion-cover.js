@@ -13,17 +13,13 @@ export function _motionCover() {
     const sequence = [
         [
             ts,
-            { y: [48, 0], opacity: [0, 1] },
+            { y: [48, 0], opacity: [0, 1], rotateX: [90, 0] },
             { delay: stagger(0.1), duration: 0.5 }
         ],
         [
             ellipsis,
             { y: [4, 0], opacity: [0, 1] },
             { delay: stagger(0.1), duration: 0.5, ease: 'linear' }
-        ],
-        [
-            link,
-            { x: [48, 0], opacity: [0, 1] },
         ],
         [
             symbol,
@@ -38,6 +34,10 @@ export function _motionCover() {
             caption,
             { x: [48, 0], opacity: [0, 1] },
             { duration: 0.5, at: '-0.3' }
+        ],
+        [
+            link,
+            { x: [48, 0], opacity: [0, 1] },
         ]
     ]
 
