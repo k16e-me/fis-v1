@@ -38,6 +38,11 @@ export function _motionCover() {
         [
             link,
             { x: [48, 0], opacity: [0, 1] },
+        ],
+        [
+            ellipsis,
+            { scale: [1, 1.25, 0.67, 1] },
+            { delay: stagger(0.1), duration: 0.5, times: [0, 0.25, 0.5, 1], ease: 'linear', type: 'spring' }
         ]
     ]
 
