@@ -10,11 +10,11 @@ export function _motionCover() {
     const caption = _q('[data-motion="caption"]', wrapper)
     const ellipsis = _ql('[data-motion="ellipsis"]', wrapper)
 
-    animate([
+    const sequence = [
         [
             ts,
             { y: [48, 0], opacity: [0, 1] },
-            { delay: stagger(0.1), duration: 0.5, ease: 'circInOut' }
+            { delay: stagger(0.1), duration: 0.5 }
         ],
         [
             ellipsis,
@@ -24,22 +24,27 @@ export function _motionCover() {
         [
             link,
             { x: [48, 0], opacity: [0, 1] },
-            { duration: 0.3, ease: 'circInOut' }
         ],
         [
             symbol,
             { x: [-48, 0], opacity: [0, 1] },
-            { duration: 0.3, ease: 'circInOut' }
         ],
         [
             logo,
             { y: [48, 0], opacity: [0, 1] },
-            { duration: 0.5, ease: 'circInOut' }
+            { duration: 0.5 }
         ],
         [
             caption,
             { x: [48, 0], opacity: [0, 1] },
-            { duration: 0.5, ease: 'circInOut' }
+            { duration: 0.5 }
         ]
-    ])
+    ]
+
+    animate(sequence, {
+        defaultTransition: {
+            duration: 0.3,
+            ease: 'circInOut',
+        }
+    })
 }
