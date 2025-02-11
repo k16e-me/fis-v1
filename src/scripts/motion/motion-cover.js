@@ -52,5 +52,19 @@ export function _motionCover() {
             ease: 'circInOut',
             delay: 0.5
         }
+    }).then(() => {
+        animate(
+            ellipsis,
+            { scale: [1, 1.25, 0.67, 1] },
+            {
+                delay: stagger(0.1),
+                duration: 0.5,
+                times: [0, 0.25, 0.5, 1],
+                ease: 'linear',
+                type: 'spring',
+                repeat: Infinity,
+                // repeatDelay: 0.2
+            }
+        )
     })
 }
