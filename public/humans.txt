@@ -4,10 +4,11 @@ Komponents & Solutions Rack Ltd was built by Kabolobari Benakole, a human, sayis
 Design: Figma
 SSG: Astro
 CSS: TailwindCSS
-Animations: Motion
+Animations: Motion => https://motion.dev/
 Hosting: Netlify
 IDE: VS Code
 Code Repository: Github
 Web: HTML, CSS, & JS
 
 /* THANKS */
+Three Dots - CSS loading animations made with single element => https://codepen.io/nzbin/pen/GGrXbp
