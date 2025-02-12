@@ -61,9 +61,8 @@ export function _motionCover() {
                 duration: 0.5,
                 times: [0, 0.25, 0.5, 1],
                 ease: 'linear',
-                type: 'spring',
                 repeat: Infinity,
-                // repeatDelay: 0.2
+                repeatDelay: 1
             }
         )
     })
