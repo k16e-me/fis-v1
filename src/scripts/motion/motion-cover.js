@@ -57,7 +57,7 @@ export function _motionCover() {
             ellipsis,
             { scale: [1, 1.25, 0.67, 1] },
             {
-                delay: stagger(0.1),
+                delay: stagger(0.1, { startDelay: 1 }),
                 duration: 0.75,
                 times: [0, 0.25, 0.5, 1],
                 ease: 'linear',
