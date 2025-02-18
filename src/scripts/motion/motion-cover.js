@@ -3,7 +3,7 @@ import { animate, stagger } from 'motion'
 
 export function _motionCover() {
     const wrapper = _q('[data-motion-wrapper]')
-    const ts = _ql('[data-motion="heading"]', wrapper)
+    const headline = _ql('[data-motion="heading"]', wrapper)
     const symbol = _q('[data-motion="symbol"]', wrapper)
     const link = _q('[data-motion="link"]', wrapper)
     const logo = _q('[data-motion="logo"]', wrapper)
@@ -12,7 +12,7 @@ export function _motionCover() {
 
     const sequence = [
         [
-            ts,
+            headline,
             { y: [48, 0], opacity: [0, 1], rotateX: [90, 0] },
             { delay: stagger(0.1), duration: 0.5, type: 'spring' }
         ],
@@ -38,11 +38,6 @@ export function _motionCover() {
         [
             link,
             { x: [48, 0], opacity: [0, 1] },
-        ],
-        [ // I want this to repeat infinitely
-            ellipsis,
-            { scale: [1, 1.25, 0.67, 1] },
-            { delay: stagger(0.1), duration: 0.5, times: [0, 0.25, 0.5, 1], ease: 'linear', type: 'spring' }
         ]
     ]
 
@@ -57,7 +52,7 @@ export function _motionCover() {
             ellipsis,
             { scale: [1, 1.25, 0.67, 1] },
             {
-                delay: stagger(0.1, { startDelay: 1.5 }),
+                delay: stagger(0.1, { startDelay: 1 }),
                 duration: 0.75,
                 times: [0, 0.25, 0.5, 1],
                 ease: 'linear',
